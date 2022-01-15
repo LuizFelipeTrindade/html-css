@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+         h1    {       /*Box-level*/
+            display:block;
+            background-color: lightgray;
+            height: 223px;
+            width: 1502px;
+
+ 
+            border: 10px solid darkslategray;
+
+            /* A sequencia da borda é width, style e cor */
+
+     
+            padding:10px ;
+
+            /* top = topo , right = direita, bottom = embaixo, left = esquerda, é nessa ordem a simplificação seu filho da puta, e se as quatro forem iguais você só informa uma vez */
+
+
+            margin:10px auto 36px auto;
+
+            /* Margin  é a mesma ordem da de cima */
+
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            outline: 5px dashed salmon;
+
+            /* Ordem do outline: width style color */
+
+        }
+
+        a {   /*inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            border: 10px solid red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding: 10px; 
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos são exemplos de box-level, mas os <a href="#">links são exemplosde caixas inline-level</a> vamos ver como isso funciona</p>
+ 
+    
+</body>
+</html>

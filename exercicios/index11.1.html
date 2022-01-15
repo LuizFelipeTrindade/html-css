@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse dispositivo em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navedor</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="cap11/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="cap11/foto-m.png" type="image/png">
+        <img src="cap11/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <audio src="media/WhatsApp Audio 2021-12-27 at 15.49.42.aac"  controls autoplay ></audio>
+    <audio preload="">
+        <source src="media/WhatsApp Audio 2021-12-27 at 15.49.42.aac" type="áudio/mpeg">
+        <p>Infelizmente seu navegador não tem compatibilidade com esse áudio <a href="media/WhatsApp Audio 2021-12-27 at 15.49.42.aac">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <ul>
+        <li> <img src="icone-youtube.png" alt="tutube"> Se você quiser aprender como eu programo <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rell="external" >Clique aqui</a></li>
+        <li> <img src="icone-twitter.png" alt="github"> Repósitorio do <a href="https://github.com/gustavoguanabara" target="_blank" rell="external">GitHub</a> do meu professor</li>
+    </ul>
+</body>
+</html>
