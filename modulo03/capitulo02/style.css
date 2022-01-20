@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color:black;
+    color:white;
+}
+
+#container1 {
+    background-color:white;
+}
+
+#conteudo1 {
+    color:black;
+    background-color:white;
+}
+
+#container2 {
+    background-image: url(imagens/background001.jpg);
+}
