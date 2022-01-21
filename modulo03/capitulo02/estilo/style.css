@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+ * {
+     margin:0px;
+     padding:0px;
+    }
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* text-align:center , centraliza o menu , centraliza essa porra */
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    /* padding-left dá paragrafo */
+    /* Line-height dá espaçamento entre as letras para facilitar a leitura usa essa porra felipe */
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.055);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 400px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    /* font-weight é negrito */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
