@@ -13,6 +13,13 @@
         table {
             width:500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead tr  th {
+            position: sticky;
+            top:-1px;
+            background-color:gray;
         }
 
         td, th {
@@ -33,8 +40,12 @@
         td .num {
             text-align:right;
         }
+        
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
     </style>   
-</head>
+</head> 
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <!-- 
@@ -48,10 +59,11 @@
                 TR TD TH
      -->
      <table>
+         <caption>População das Unidades Federativas do Brasil</caption>
          <thead>
-            <th>Estado</th>
-            <th>População</th>
-            <th>% da População Total</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+            <th scope="col">% da População Total</th>
          </thead>
          <tbody>
             <tr>
@@ -192,11 +204,15 @@
          </tbody>
          <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <th>210.147.125</th>
-                <th>100% População</th>
+                <th scope="row">Total de Habitantes</th>
+                <th scope="row">210.147.125</th>
+                <th scope="row">100% População</th>
             </tr>
          </tfoot>
      </table>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore ratione ad commodi aliquid saepe libero voluptas sit nulla delectus fugiat hic quod sint non incidunt, iure neque corporis perferendis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, id vero eius animi sed quaerat fugit sit quam dolores neque fugiat ipsa, magnam pariatur voluptate rerum? Esse officia quibusdam tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dolore perspiciatis officiis repellendus sed! Mollitia, voluptatum illum quo nobis eligendi qui ratione commodi assumenda adipisci architecto asperiores veritatis ab. Illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid corrupti ab mollitia dolor ipsa eligendi facere quidem iste, commodi magnam itaque amet praesentium ratione voluptatem modi magni labore repellat fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis molestias provident recusandae corrupti voluptatem soluta a laboriosam, excepturi commodi sint, optio dolores, tenetur repellendus inventore quam neque dolor vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum, possimus, soluta adipisci veniam nulla distinctio amet quidem nostrum quam quas, ex illo quasi veritatis fugit itaque? Quas, animi perspiciatis!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore ratione ad commodi aliquid saepe libero voluptas sit nulla delectus fugiat hic quod sint non incidunt, iure neque corporis perferendis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, id vero eius animi sed quaerat fugit sit quam dolores neque fugiat ipsa, magnam pariatur voluptate rerum? Esse officia quibusdam tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dolore perspiciatis officiis repellendus sed! Mollitia, voluptatum illum quo nobis eligendi qui ratione commodi assumenda adipisci architecto asperiores veritatis ab. Illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid corrupti ab mollitia dolor ipsa eligendi facere quidem iste, commodi magnam itaque amet praesentium ratione voluptatem modi magni labore repellat fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis molestias provident recusandae corrupti voluptatem soluta a laboriosam, excepturi commodi sint, optio dolores, tenetur repellendus inventore quam neque dolor vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum, possimus, soluta adipisci veniam nulla distinctio amet quidem nostrum quam quas, ex illo quasi veritatis fugit itaque? Quas, animi perspiciatis!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore ratione ad commodi aliquid saepe libero voluptas sit nulla delectus fugiat hic quod sint non incidunt, iure neque corporis perferendis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, id vero eius animi sed quaerat fugit sit quam dolores neque fugiat ipsa, magnam pariatur voluptate rerum? Esse officia quibusdam tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dolore perspiciatis officiis repellendus sed! Mollitia, voluptatum illum quo nobis eligendi qui ratione commodi assumenda adipisci architecto asperiores veritatis ab. Illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid corrupti ab mollitia dolor ipsa eligendi facere quidem iste, commodi magnam itaque amet praesentium ratione voluptatem modi magni labore repellat fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis molestias provident recusandae corrupti voluptatem soluta a laboriosam, excepturi commodi sint, optio dolores, tenetur repellendus inventore quam neque dolor vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum, possimus, soluta adipisci veniam nulla distinctio amet quidem nostrum quam quas, ex illo quasi veritatis fugit itaque? Quas, animi perspiciatis!</p>
 </body>
 </html>
