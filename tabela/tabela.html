@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- META DATES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- TITLE -->
+    <title>Document</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Disciplina Análise Matemática</h1>
+
+        <h3>Notas 2022</h3>
+
+        <p>Se você não sabe aonde encontrar as suas notas, acesse o o portal do aluno <a href="http://www.utfpr.edu.br/alunos/portal-do-aluno" target="_blank">Aqui</a></p>
+
+    <div id="ss1">
+        <p>Digite aqui sua frequência: <input type="number" name="frequencia" id="fre"> </p>
+
+        <p>Digite aqui sua nota: <input type="number" name="nota" id="nota"></p>
+        
+        <button onclick="calcular()">Calcular</button>
+
+    </div>
+    <div id="resultado">
+
+    </div>
+
+    
+    <script>
+        function calcular(){
+            let presenca = document.getElementById('fre');
+            let pres = Number(presenca.value);
+            
+            let nota = document.getElementById('nota');
+            let notae = Number(nota.value);
+            
+            
+            let resultadinho = document.getElementById('resultado');
+
+
+            let media = (pres + notae) / 2 ;
+
+
+
+            resultadinho.innerHTML = `Seu média entre a presença e as notas foi de ${media}`;
+
+            
+
+        }
+    </script>
+</body>
+</html>
